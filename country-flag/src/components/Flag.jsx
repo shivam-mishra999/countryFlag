@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import styles from "./Flag.module.css";
 
 export default function Flag() {
-    const [countries, setCountries] = useState("null");
+    const [countries, setCountries] = useState([]);
 
     useEffect(()=>{
         fetch('https://restcountries.com/v3.1/all')
